@@ -1,0 +1,56 @@
+Task 1
+% course.m dosyasına course adında bir sınıf tanımladım.
+classdef course
+end
+
+Task 2
+% c adında bir kurs nesnesi oluşturdum.
+c = course
+
+Task 3
+% course.m dosyasına tanımladığım sınıfa özellikler bloğu ekledim.
+classdef course
+    properties
+        Name
+        Level
+        Waypoints
+    end
+end
+
+Task 4
+% c'nin bir level özelliğine sahip olduğunu doğruladım.
+c = course
+lvl = c.Level
+
+Task 5 
+% c'nin Level özelliğini White dizesine ayarladım.
+c.Level = "White"
+
+Task6
+% c'nin Level özelliğini 42 ile değiştirdim.
+c.Level = 42
+
+Task 1
+% idstck.m dosyasında özellikleri olan bir idstick adında sınıf tanımladım.
+classdef idstick
+    properties
+        SerialNumber
+        Status
+        Participant
+        Course
+        Timestamps
+    end
+end
+
+Task 2
+% id adında ID stick nesnesi oluşturdum. SerialNumber özelliğini 1234 olarak ayarladım.
+id = idstick
+id.SerialNumber = 1234
+
+Task 3 
+% id'nin Course özelliğini c olarak ayarladım.
+id.Course = c
+
+Task 4
+%id'nin Course özelliğindeki course nesnesinin Waypoints özelliğinde saklanan waypoints listesini aldım. Sonucu w adlı bir değişkene kaydettim.
+w = id.Course.Waypoints
